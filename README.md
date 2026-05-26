@@ -1,4 +1,4 @@
-# String and Number Utilities Library 🛠️
+# String and Number Utilities Library 
 
 ![CI](https://github.com/ZeroNexus-afk/string_and_number_utilities_library/actions/workflows/ci.yml/badge.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
@@ -21,6 +21,7 @@ Một thư viện mã nguồn mở cung cấp các hàm tiện ích mạnh mẽ 
 from src.number_utils import is_prime, factorial
 
 print(is_prime(7)) # Output: True
+
 print(factorial(5)) # Output: 120
 
 ## Giấy phép (License) 
