@@ -1,0 +1,24 @@
+name: CI Pipeline
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Cải đặt Python
+      uses: actions/setub-Python@v5
+      with: 
+        Python-version: '3.10'
+    - name: Cài đặt thư viện đo Coverage
+    run: pip install Coverage
+
+    - name: Chạy Unit Test và đo Coverage
+      run:|
+        Coverage run -unittest discover -s tests
+        Coverage report -m
